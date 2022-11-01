@@ -1,0 +1,24 @@
+EXP2> Install Git And Work LOCAL AND REMOTE
+sudo apt-get install git
+git config --global user.name "Amir"
+git config --global user.name "20104013amirmadoo@gmail.com"
+
+>>>>>>
+
+mkdir amir
+cd ~/amir/
+git init
+git config --global --list
+touch abc
+ls
+cat > abc
+Hello this is amir ^C
+git status
+sit add abc
+git status
+git commit -m "Github1"
+git status
+git log     >>>> 1567454ewe464fd68
+git show 1567
+git push -u origin master
+git pull origin master
