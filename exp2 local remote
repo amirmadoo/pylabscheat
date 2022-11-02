@@ -22,3 +22,104 @@ git log     >>>> 1567454ewe464fd68
 git show 1567
 git push -u origin master
 git pull origin master
+
+
+
+
+EXP3> VERSION CONTROL SYSTEM and SOURCE CODE
+git config --global user.name "amirmadoo"
+git config --global user.email "amirmadoo4590@gmail.com"
+git config --list
+git help
+
+
+
+EXP4> Jenkins and MAVEN
+
+sudo apt-get update
+sudo apt-get install openjdk-11-jdk
+java -version
+curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee \
+  /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt-get update
+sudo apt-get install jenkins
+sudo systemctl start jenkins.service
+sudo systemctl status jenkins
+
+
+
+EXP5> Jenkins and TOMCAT
+sudo apt-get update
+sudo systemctl start jenkins.service
+sudo systemctl start jenkins
+
+Build a project go to advanced projection 
+SELECT PIPELINE FROM DROP DOWN
+Now code:
+pipeline{
+	agent any
+	stages{
+		stage("Hello"){
+			stops{
+				echo 'Welcome to Apsit'
+				}
+			}
+		}
+	}
+  
+  
+EXP6> MASTER SLAVE
+sudo su root
+ssh-keygen
+ssh-copy-id -i apsit@apsit-HP-280-G2-MT-Legacy@192.168.
+ssh-copy-id -i apsit@ipadrs
+ssh-copy-id -i apsit@ipadrs
+
+
+EXP8> DOCKER
+sudo docker --version
+sudo su
+docker pull ubuntu
+docker ps -a
+docker run -it 4654654sd6a bash
+ls
+docker pull mysql
+docker rmi 545sd45as6d -f
+docker pull mysql
+docker run mysql
+docker run --name amir -e MYSQL_USER=root -e MYSQL_DATABASE=apple -e MYSQL_ROOT_PASSWORD=root -d 4564541sda65
+docker images
+docker ps
+docker exec -it amir /bin/bash
+mysql -u root -p
+
+
+EXP12> ANSIBLE
+sudo ansible --version
+sudo su
+cd /etc/ansible/
+ls
+rm -rf playbooks/
+ls
+mkdir playbooks
+cd ..
+cd home/apsit/Downloads
+cat playbook.yml
+name: nginx install and start services
+hosts:all
+become:true
+
+tasks:
+-name : installl nginx
+apt:
+name: nginx
+state:latest
+
+name: start nginx
+service:
+name:nginx
+state:starter
+
